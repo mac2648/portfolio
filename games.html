@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/functions.js"></script>
+    <link rel="stylesheet" href="./css/games.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.jpeg">
+    <style>
+        table, td, th, tr {
+          border: solid black;
+          border-width: 1px;
+          text-align: center;  
+        }
+        </style>
+    <title>All games</title>
+</head>
+<body>
+    <button onclick="goToHTMLPortifolio()">go back to html portifolio</button>
+    <div id="gamePage" class="page" style = "display:inline">
+        <h2>Games list</h2>
+        <div id="GameTable"></div>
+        <br>
+        <button onclick="goToAddGame()">add game</button>
+    </div>
+
+    <div id="addGamePage" class="page" style = "display:none">
+        <div id="addGameForm">
+            <form >
+                <label for="gameName">game name</label>
+                <input type="text" id="gameName">
+                <br>
+                <label for="gamePlatform">platform</label>
+                <input type="text" id="gamePlatform">
+                <br>
+                <input class="button" type="button" onclick="submitGame()" value="submit">
+                <br><br>
+                <p id="errorMessageGame" style="color: red;"></p>
+            </form> 
+            <button class="goBackToGames" onclick="goToGames()">go back to games</button>
+        </div>
+    </div>
+
+    <div id="leaderboardPage" class="page" style = "display:none">
+        <div id="leaderTable"></div>
+        
+    </div>
+
+    <div id="addLeaderboardPage" class="page" style = "display:none">
+        
+    </div>
+    
+</body>
+</html>

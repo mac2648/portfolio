@@ -1,0 +1,89 @@
+/*
+table style is from https://divtable.com/table-styler/
+*/
+
+table {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 2px solid #4F7849;
+    background-color: #EEEEEE;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #4F7849;
+    padding: 3px 2px;
+}
+
+td {
+    font-size: 19px;
+    font-weight: bold;
+    color: #4F7849;
+}
+
+tr:nth-child(even) {
+    background: #CEE0CC;
+}
+
+div.page{
+    position: absolute;
+    left: 25%;
+    width: 50%;
+}
+
+button{
+    position: relative;
+    left: 45%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 2px solid #293f26;
+    background-color: #EEEEEE;
+    text-align: center;
+    font-size: 15px;
+}
+
+button.goBackToGames{
+    position: relative;
+    left: 41%;
+}
+
+
+th {
+    font-size: 21px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #4F7849;
+    background: -moz-linear-gradient(top, #7b9a76 0%, #60855b 66%, #4F7849 100%);
+    background: -webkit-linear-gradient(top, #7b9a76 0%, #60855b 66%, #4F7849 100%);
+    background: linear-gradient(to bottom, #7b9a76 0%, #60855b 66%, #4F7849 100%);
+    border-top: 1px solid #444444;
+  }
+
+
+h2{
+    position: relative;
+    left: 45%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
+    font-size: 21px;
+}
+
+form{
+    position: relative;
+    left: 30%;
+}
+
+input, label{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 15px;
+}
+
+input.button{
+    position: relative;
+    left: 15%;
+}
+
+div#gamePage{
+    position:absolute;
+    top: 35px;
+}

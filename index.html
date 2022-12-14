@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        label{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+        }
+        li{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+        }
+        #top{
+            position: absolute;
+            left: 90%;
+            top: 0px;
+        }
+        #bottom{
+            position: absolute;
+            left: 90%;
+            top: 1480px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my site</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.jpeg">
+</head>
+<body>
+
+    <img id="myPhoto"  src="./assets/MyPhoto.JPEG" alt="photo">
+
+    <div id="personalForm">
+        <form action="GET">
+            <label for="fullname">name: </label>
+            <input type="text" class="text" name="fullname" id="fullname" value="Marcelo Vitor Toscan de Oliveira" disabled> 
+            <br>
+            <label for="country">country: </label>
+            <input type="text" class="text" name="country" id="country" value="Brazil" disabled> 
+            <br>
+            <label for="program">program: </label>
+            <input type="text" class="text" name="program" id="program" value="Game Programming" disabled> 
+        </form>
+    </div>
+
+    <div id="abilities">
+        <h1 class="title">abilities</h1>
+        <div id="intermediaryLevel">
+            <h2 class="secundaryTitle">intermediary level</h2>
+            <ul>
+                <li>c++</li>
+                <li>Arduino</li>
+            </ul>
+        </div>
+        <div id="beginnerLevel">
+            <h2 class="secundaryTitle">Beginner level</h2>
+            <ul>
+                <li>Blender</li>
+                <li>HTML</li>
+                <li>Python</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="blenderDiv">
+        <h1 class="blenderText title">my portfolio (clickable icons)</h1>
+        <a class="blenderIcon" href="blender_portfolio.html"> <img  src="./assets/blender_logo.png" alt="imagem" height="130"></a>
+        <a class="htmlIcon" href="htmlPortifolio.html"> <img  src="./assets/HTMLlogo.png" alt="imagem" height="120"></a>
+        <a class="cppIcon" href="cppPortfolio.html"> <img  src="./assets/CPPIcon.png" alt="imagem" height="120"></a>
+        <a class="GIMPicon" href="gimpportfolio.html"> <img  src="./assets/GIMPicon.png" alt="imagem" height="120"></a>
+        <br><br><br>
+        <hr style="position: absolute;top: 170px;">
+    </div>
+
+</body>
+</html>

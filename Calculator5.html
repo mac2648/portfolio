@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Calculator</title>
+    <script src="./js/functions.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.jpeg">
+</head>
+
+<body>
+    <button class="buttonText" onclick="goToHTMLPortifolio()">go back to html portifolio</button>
+<div id="calculator">
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" class="calText" name="n1" value="" disabled id="n1"></td>
+            <td>
+                <button class="buttonText" type="button" name="button" 
+                onclick="reset()"> clear </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="buttonText" type="button" name="button" 
+                onclick="update('7')"> &nbsp; 7 &nbsp;  </button>
+            </td>
+            <td>
+                <button class="buttonText" type="button" name="button" 
+                onclick="update('8')"> &nbsp; 8 &nbsp; </button>
+            </td>
+            <td>
+                <button class="buttonText" type="button" name="button" 
+                onclick="update('9')"> &nbsp; 9 &nbsp; </button>
+            </td>
+            <td>
+                <button class="buttonText" type="button" name="button" 
+                onclick="update('/')"> &nbsp; / &nbsp;&nbsp;</button>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <button class="buttonText" type="button" name="button"
+                onclick="update('4')"> &nbsp; 4 &nbsp;</button>
+            </td>
+            <td>
+                <button class="buttonText" type="button" name="button" 
+                onclick="update('5')"> &nbsp; 5 &nbsp;</button>
+            </td>
+            <td>
+                <button class="buttonText" type="button" name="button" 
+                onclick="update('6')"> &nbsp; 6 &nbsp;</button>
+            </td>
+            <td>
+                <button class="buttonText" type="button" name="button" 
+                onclick="update('*')"> &nbsp; * &nbsp;&nbsp;</button>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <button class="buttonText" type="button" name="button"
+                onclick="update('1')"> &nbsp; 1 &nbsp;</button>
+            </td>
+            <td>
+                <button class="buttonText" type="button" name="button"
+                onclick="update('2')"> &nbsp; 2 &nbsp;</button>
+            </td>
+            <td>
+                <button class="buttonText" type="button" name="button"
+                onclick="update('3')"> &nbsp; 3 &nbsp;</button>
+            </td>
+            <td>
+                <button class="buttonText" type="button" name="button"
+                onclick="update('-')"> &nbsp; - &nbsp;&nbsp;</button>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <button class="buttonText" type="button" name="button" 
+                onclick="update('0')"> &nbsp; 0 &nbsp;</button>
+            </td>
+            <td>
+                <button class="buttonText" type="button" name="button" 
+                onclick="update('.')"> &nbsp; . &nbsp;&nbsp;</button>
+            </td>
+            <td>
+                <button class="buttonText" type="button" name="button" 
+                onclick="calculate()"> &nbsp; = &nbsp;</button>
+            </td>
+            <td>
+                <button class="buttonText" type="button" name="button" 
+                onclick="update('+')"> &nbsp; + &nbsp;</button>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
+    <script>
+        function calculate(){
+            var n1 = document.getElementById('n1').value;
+            var res;
+            res = eval(n1);
+            document.getElementById('n1').value = res.toFixed(3);
+        }
+
+        function update(value){
+            var n1 = document.getElementById('n1').value;
+            var n2 = n1 + value;
+            document.getElementById('n1').value = n2;
+        }
+
+        function reset(){
+            document.getElementById('n1').value = '';
+        }
+
+    </script>
+    
+</body>
+</html> 

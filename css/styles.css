@@ -1,0 +1,165 @@
+hr{
+    height:10px;
+    border-width:0;
+    color:black;
+    background-color:black;
+    width: 100%;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+button{
+    border-radius: 12px;
+    background-color: black;
+    padding: 10px 24px;
+}
+
+.buttonText{
+    color: white;
+}
+
+#myPhoto{
+    position: absolute;
+    top: 50px;
+    left: 750px;
+    width: 200px;
+    border-style: solid;
+}
+
+#personalForm{
+    position: absolute;
+    top: 50px;
+    left: 75px;
+}
+
+.calText{
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: black;
+}
+
+.text{
+    width: 100%;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: black;
+}
+
+#abilities{
+    position: absolute;
+    top: 250px;
+    left: 75px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    width: 500px;
+}
+
+
+#abilities #beginnerLevel{
+    position: absolute;
+    top: 45px;
+    left: 230px;
+}
+
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+.secundaryTitle{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+#aboutMe{
+    position: absolute;
+    top: 1390px;
+    left: 75px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    width: 500px;
+}
+
+#favoriteGames{
+    position: absolute;
+    top: 660px;
+    left: 75px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    width: 500px;
+}
+
+.gameImages{
+    width: 300px;
+    position: absolute;
+}
+
+#favoriteMusic{
+    position: absolute;
+    top: 1190px;
+    left: 75px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    width: 500px;
+}
+
+#blenderDiv{
+    position: absolute;
+    top: 475px;
+    width: 100%;
+}
+
+.blenderText {
+    position: absolute;
+    left: 75px;
+}
+
+.blenderIcon{
+    position: absolute;
+    top: 50px;
+    left: 75px;
+}
+
+.protifolioImage{
+    border-radius: 16px;
+    width: 300px;
+}
+
+.gimpProtifolioImage{
+    border-radius: 16px;
+    width: 200px;
+}
+
+.putInMiddle{
+    position: absolute;
+    left: 20%;
+    top: 100px;
+}
+
+.htmlIcon{
+    position: relative;
+    left: 220px;
+    top: 45px;
+}
+
+.cppIcon{
+    position: relative;
+    left: 270px;
+    top: 45px;
+}
+
+.GIMPicon{
+    position: relative;
+    left: 320px;
+    top: 45px;
+}
+
+#calculator{
+    position: absolute;
+    top:30%;
+    left:30%;
+}

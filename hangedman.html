@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/hangedman.js"></script>
+    <script src="./js/functions.js"></script>
+    <title>Document</title>
+    <style>
+        .buttonText{
+            position:absolute;
+            left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <button class="buttonText" onclick="goToHTMLPortifolio()">go back to html portifolio</button>
+    <div id="form1" style = "display: inline;">
+        enter a word:
+        <input type="password" id="secretWord">
+        <br>
+        <button onclick="start()">submit</button>
+    </div>
+
+    <div id="form2" style = "display: none;">
+    <img id="image" src="./assets/hangedAssets/img0.png" alt="img" width="300px">
+    <br>
+        <p id = "word"></p>
+        enter a letter:
+        <input type="text" id="letter">
+        <br>
+        <button onclick="check()">submit</button>
+    </div>
+</body>
+</html>
