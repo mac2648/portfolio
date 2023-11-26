@@ -4,6 +4,14 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+@font-face
+{
+    font-family: RPGFont;
+    src: url("../Assets/AppleChanceryRegular.ttf") format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
 .position{
     position: absolute;
 }
@@ -15,14 +23,15 @@ body{
 
 .AboutMeText
 {
-    font-family: URW Chancery L, cursive;
-    font-size: medium;
+    font-family: RPGFont;
+    src: url("../Assets/AppleChanceryRegular.ttf") format('truetype');
+    font-size: large;
     position: relative;
-    top: -630px;
+    top: -750px;
 }
 
 .container {
-	height: 836px;
+	height: 1010px;
 }
 
 main{
