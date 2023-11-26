@@ -1,0 +1,45 @@
+:root{
+    --QuestLeftPosition: 900px;
+}
+
+body{
+    margin: 10px;
+    background-color: burlywood;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main{
+    position: relative;
+    min-width: fit-content;
+}
+
+
+.position{
+    position: relative;
+}
+
+
+#quest1{
+    top: 0px;
+    left: 0px;
+}
+
+#quest1Info
+{
+    top:-650px;
+}
+
+#quest2{
+    top: 0px;
+    left: 0px;
+}
+
+#quest2Info
+{
+    top:-650px;
+}
+
+.QuestSize
+{
+    height: 992px;
+}

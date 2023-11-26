@@ -1,0 +1,37 @@
+body{
+    margin: 10px;
+    background-color: burlywood;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main{
+    position: relative;
+}
+
+.div-selections:hover{
+    transition: 1.5s;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.position{
+    position: absolute;
+}
+
+
+#ueprojects{
+    top: 220px;
+    left: 450px;
+}
+
+#minigames{
+    top: 560px;
+    left: 250px;
+}
+
+#collegeprojects{
+    top: 450px;
+    left: 650px;
+}
+
