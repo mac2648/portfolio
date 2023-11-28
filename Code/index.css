@@ -25,9 +25,9 @@ body{
 {
     font-family: RPGFont;
     src: url("../Assets/AppleChanceryRegular.ttf") format('truetype');
-    font-size: large;
+    font-size: 19px;
     position: relative;
-    top: -750px;
+    top: -785px;
 }
 
 .container {
