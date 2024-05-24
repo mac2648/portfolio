@@ -19,19 +19,25 @@ main{
     position: absolute;
 }
 
+.relative{
+    position : relative;
+}
 
 #ueprojects{
-    top: 220px;
-    left: 450px;
+    top: -772px;
+    left: -50px;
 }
 
 #minigames{
-    top: 560px;
-    left: 250px;
+    top: -600px;
+    left: -220px;
 }
 
 #collegeprojects{
-    top: 450px;
-    left: 650px;
+    top: -900px;
+    left: 175px;
 }
 
+#WorldMapDiv{
+    height: 972px;
+}
