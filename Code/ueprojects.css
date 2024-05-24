@@ -53,24 +53,12 @@ main{
 }
 
 
-#quest1{
+.quest{
     top: 0px;
     left: 0px;
 }
 
-#quest1Info
-{
-    font-family: RPGFont;
-    src: url("../Assets/AppleChanceryRegular.ttf") format('truetype');
-    top:-700px;
-}
-
-#quest2{
-    top: 0px;
-    left: 0px;
-}
-
-#quest2Info
+.questInfo
 {
     font-family: RPGFont;
     src: url("../Assets/AppleChanceryRegular.ttf") format('truetype');
