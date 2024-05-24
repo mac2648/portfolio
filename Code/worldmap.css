@@ -8,6 +8,10 @@ main{
     position: relative;
 }
 
+.div-selections{
+    width : 240px;
+}
+
 .div-selections:hover{
     transition: 1.5s;
     -webkit-transform: scale(1.05);
