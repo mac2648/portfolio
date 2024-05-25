@@ -42,7 +42,7 @@ main{
 .Hud
 {
     position:relative;
-    top: -825px;
+    top: -625px;
 }
 
 .HudVideo
@@ -54,5 +54,5 @@ main{
 #HudDiv
 {
     position: relative;
-    height:1125px;
+    height:860px;
 }
