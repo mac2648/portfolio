@@ -1,72 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Code/index.css" />
-
-    <title>Marcelo Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="./Assets/favicon.png">
-
-    <body>
-
-        <main>
-            <center>
-            <br><br>
-
-            <div>
-                <iframe width="1008" height="567" src="https://www.youtube.com/embed/Fivh87a3tQU?si=t4OV7CouG8SplD9e"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe><br>
-            </div>
-
-            <br><br><br>
-
-            <div id="HudDiv">                                           <!---1150       825         1211        1125-->
-                <img src="./Assets/SizeShifter.gif" alt="SizeShifter" width="880px" height="631px" class="HudVideo">
-                <img class="Hud" src="./Assets/main.png" alt="main" width="926px" height="860px">
-            </div>
-            <br><br><br>
-
-            <div  id = "aboutme" class="container">
-                <img src="./Assets/about me.png" alt="aboutme" width="1078" height="1010">
-                <p class = "AboutMeText">
-                    If you have played Final Fantasy XIV,<br>
-                    you probably know the feeling of stepping into a new world full of possibilities,<br> 
-                    engaging stories and new friends to be made.<br><br> I want to build the foundations for those worlds.<br><br>
-
-                    Hello my name is Marcelo. I was born and raised in Brazil,<br>
-                    where I studied mechatronics engineering for 3 and a half years<br> which gave me greater understanding about algorithms, math and physics. <br><br>
-                    I’m studying game programming at St Lawrence college<br> where I have learned JavaScript, C++, APIs and Unity.<br>
-                    I’m also studying Unreal engine 5 on my own<br> using Youtube videos, documentation, and Udemy courses.<br>
-                    I’m currently working on creating my own games using Unreal Engine 5.<br>
-                    I’m proud of my works with Unreal Engine 5 and uploaded them in github page.<br><br>
-
-                    I want to participate in a project of a big RPG game<br> and to give other people the same feeling that I had years ago.<br>
-                    If you are interested in my ideas, feel free to contact me.<br><br>
-                    
-                </p>
-            </div>
-            <br><br><br>
-
-            <a href="https://www.linkedin.com/in/marcelo-toscan"><img src="./Assets/linkedinbutton.png"  alt="Linkedin"></a> &nbsp;&nbsp;&nbsp;
-            <a href="./Code/resume.html"><img src="./Assets/resumebutton.png" alt="resume"></a>
-
-            <br><br><br>
-
-            <a href="./Code/worldmap.html"  title="worldmap">
-                <img src="./Assets/button_worldmap.png" alt="button_worldmap" width="343" height="223">
-            </a>
-
-
-
-            <br><br><br>
-            <p id="Bottom">Copyright 2023. Marcelo. All pictures cannot be copied without permission.</p>
-            </center>
-        </main>
-
-    </body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Programmer Portfolio</title>
+    <link rel="stylesheet" href="Code/index.css" />
 </head>
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">Marcelo Oliveira</h1>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Game Programmer</h2>
+            <p>
+                I am a gameplay-focused game programmer with experience building a wide range of systems in Unreal Engine, working comfortably across both C++ and Blueprints. My work spans core gameplay mechanics and supporting systems, including AI behavior, turn-based combat, quest and dialogue systems, node-based world elements, and multiple types of user interfaces.
+            </p>
+            <p>
+                I am accustomed to working in collaborative development environments and contributing to features from early implementation through iteration and refinement. While Unreal Engine is my primary toolset, I also have experience with Unity, and I am comfortable working with Git-based workflows for version control and collaboration.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h3>About Me</h3>
+            <p>
+                I have around a year and a half of professional experience working on game development projects, and over three years when including my academic background. I enjoy working on gameplay mechanics and systems design, with a focus on building features that are clear, maintainable, and scalable as projects evolve.
+            </p>
+            <br>
+            <p>
+                My work has primarily been within small teams of four to five people, often as the sole programmer. This has required close collaboration with designers and artists, and in some cases direct involvement in design decisions to help translate gameplay ideas into practical implementations. I value clear communication and iteration, especially when refining systems based on playtesting and feedback.
+            </p>
+            <br>
+            <p>
+                From a technical perspective, I approach problems methodically and aim to structure systems in a way that supports long-term growth, while continuing to improve my architectural and design practices through experience. Given the current state of the industry, I remain flexible in my specialization and am comfortable focusing more deeply on the areas a project or role requires.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section alt">
+        <div class="container">
+            <h3>Projects</h3>
+
+            <div class="project-list">
+
+                <article class="project-card">
+                    <h4>Project Lunaris</h4>
+                    <p class="project-description">
+                        Role: Sole Programmer, Quest & Combat Designer <br>
+                        Team Size: 4 <br>
+                        Status: Ongoing<br>
+                        Engine: Unreal Engine 5.4<br>
+                        Tech: C++, Blueprints
+                    </p>
+                    <br>
+                    <h5>Overview</h5>
+                    <p class="project-description">
+                        Project Lunaris is a turn-based RPG focused on player choice and systemic progression. As the sole programmer on the project, I was responsible for the implementation of all core gameplay systems, while also contributing directly to quest and combat design.
+                    </p>
+                    <br>
+                    <h5>Systems & Responsibilities</h5>
+                    <ul class="project-description-list">
+                        <li>Modular quest system</li>
+                        <li>Branching dialogue system</li>
+                        <li>Turn-based combat system</li>
+                        <li>Elemental skill framework</li>
+                        <li>Multiple gameplay and menu UI systems</li>
+                    </ul>
+                    <br>
+                    <h5>Technical Highlights</h5>
+                    <p class="project-description">
+                        <b>Modular Quest Architecture:</b><br>
+                        I designed a flexible, step-based quest system where quests are composed of interchangeable steps that can be combined in different ways. This approach allows designers to build a wide variety of quest behaviors by assembling predefined step types, enabling rapid iteration and strong design freedom without requiring code changes.
+                        <br>
+                        <b>Flag-Driven Dialogue System:</b><br>
+                        The dialogue system is built around a flag-based state model that allows NPCs to react dynamically to player actions, quest progress, and previous dialogue choices. Flags can be set by both quests and dialogues, enabling branching conversations and evolving narrative responses while keeping the system data-driven and designer-friendly.
+                    </p>
+                    <br>
+                    <h5>Technical Challenge & Solution</h5>
+                    <p class="project-description">
+                        To keep the dialogue flag system performant and readable, I used enums to represent dialogue states. However, Unreal Engine’s reflection system limits Blueprint-exposed enums to TEnumAsByte, which caps the number of usable values and reduced flexibility as the project grew.
+                        To solve this, I implemented a custom struct paired with an IPropertyTypeCustomization, allowing designers to work with a large, readable set of dialogue flags directly inside the editor while bypassing the 255-value limitation. This maintained runtime performance while significantly improving editor usability and long-term scalability.
+                    </p>
+                    <!--<p class="project-tech">
+                        Technologies used: engine, language, tools, or frameworks.
+                    </p>-->
+                </article>
+
+                <article class="project-card">
+                    <h4>Another Project</h4>
+                    <p class="project-role">
+                        Describe whether this was a solo project, team project, or prototype.
+                    </p>
+                    <p class="project-description">
+                        Focus on interesting programming aspects: AI, UI systems,
+                        performance work, tooling, or architecture decisions.
+                    </p>
+                    <p class="project-tech">
+                        Technologies used.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h3>Technical Skills</h3>
+
+            <ul class="skills-list">
+                <li>Programming languages and proficiency levels</li>
+                <li>Game engines and related workflows</li>
+                <li>Gameplay systems, AI, UI, networking, or tools</li>
+                <li>Version control, debugging, and optimization practices</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section alt">
+        <div class="container">
+            <h3>Contact</h3>
+            <p>
+                Brief invitation to reach out.
+                Mention availability for work, collaborations, or discussions.
+            </p>
+
+            <ul class="contact-list">
+                <li>Email: your professional email address</li>
+                <li>GitHub: link to your repositories</li>
+                <li>LinkedIn or other professional platforms</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                © Your Name — Game Programmer Portfolio.
+                Optional short personal tagline or specialization.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

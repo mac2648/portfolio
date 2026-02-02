@@ -1,58 +1,169 @@
-body{
-    margin: 10px;
-    background-color: burlywood;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@font-face
-{
-    font-family: RPGFont;
-    src: url("../Assets/AppleChanceryRegular.ttf") format('truetype');
-    font-weight: normal;
-    font-display: swap;
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.6;
+    color: #eaeaea;
+    background-color: #0f1115;
 }
 
-.position{
-    position: absolute;
-}
-
-#aboutme
-{
-    position: relative;
-}
-
-.AboutMeText
-{
-    font-family: RPGFont;
-    src: url("../Assets/AppleChanceryRegular.ttf") format('truetype');
-    font-size: 19px;
-    position: relative;
-    top: -785px;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .container {
-	height: 1010px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-main{
-    position: relative;
-    min-width: fit-content;
+/* Header */
+.site-header {
+    background: #0b0d11;
+    border-bottom: 1px solid #1f222a;
 }
 
-.Hud
-{
-    position:relative;
-    top: -625px;
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
 }
 
-.HudVideo
-{
-    position: relative;
-    top: 20px;
+.logo {
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
-#HudDiv
-{
-    position: relative;
-    height:860px;
+.nav a {
+    margin-left: 1.5rem;
+    font-size: 0.9rem;
+    color: #bfc5d2;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+/* Hero */
+.hero {
+    padding: 5rem 0;
+    background: linear-gradient(180deg, #0f1115, #0b0d11);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    max-width: 900px;
+    margin-bottom: 2rem;
+    color: #c8cdd8;
+}
+
+.hero-actions .btn {
+    margin-right: 1rem;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 0;
+}
+
+.section.alt {
+    background: #0b0d11;
+}
+
+.section h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.btn.primary {
+    background: #4f7cff;
+    color: #ffffff;
+}
+
+.btn.primary:hover {
+    background: #3e66d8;
+}
+
+.btn.secondary {
+    border: 1px solid #4f7cff;
+    color: #4f7cff;
+}
+
+.btn.secondary:hover {
+    background: rgba(79, 124, 255, 0.1);
+}
+
+/* Projects */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #12151c;
+    border: 1px solid #1f222a;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.project-card h4 {
+    margin-bottom: 0.5rem;
+}
+
+.project-role {
+    font-size: 0.85rem;
+    color: #9aa2b1;
+    margin-bottom: 0.5rem;
+}
+
+.project-tech {
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+    color: #9aa2b1;
+}
+
+.project-description-list {
+    margin-left: 40px
+}
+
+/* Skills & Contact */
+.skills-list,
+.contact-list {
+    list-style: none;
+}
+
+.skills-list li,
+.contact-list li {
+    margin-bottom: 0.6rem;
+    color: #c8cdd8;
+}
+
+/* Footer */
+.site-footer {
+    padding: 2rem 0;
+    background: #0b0d11;
+    border-top: 1px solid #1f222a;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #9aa2b1;
 }
