@@ -64,6 +64,26 @@
             <div class="project-list">
 
                 <article class="project-card">
+                    <div class="project-media">
+                        <!-- Trailer -->
+                        <div class="project-video">
+                            <iframe 
+                                src="https://www.youtube.com/embed/-6UqMWGGzg8"
+                                title="Project Lunaris Trailer"
+                                frameborder="0"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <!-- Screenshots -->
+                        <div class="project-screenshots">
+                            <img src="Images/lunaris_1.png" alt="Dialogue system screenshot" class="screenshotProject1">
+                            <img src="Images/lunaris_2.png" alt="Turn-based combat screenshot" class="screenshotProject1">
+                            <img src="Images/lunaris_3.png" alt="Receive quest screenshot" class="screenshotProject1">
+                            <img src="Images/lunaris_4.png" alt="quest jornal screenshot" class="screenshotProject1">
+                        </div>
+                    </div>
+                    <br>
                     <h4>Project Lunaris</h4>
                     <p class="project-description">
                         Role: Sole Programmer, Quest & Combat Designer <br>
@@ -107,16 +127,59 @@
                 </article>
 
                 <article class="project-card">
-                    <h4>Another Project</h4>
-                    <p class="project-role">
-                        Describe whether this was a solo project, team project, or prototype.
-                    </p>
+                    <div class="project-media">
+                        <div class="project-video">
+                            <iframe 
+                                src="https://www.youtube.com/embed/q1P41xywKGI"
+                                title="Tavern Builder Trailer"
+                                frameborder="0"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="project-screenshots">
+                            <img src="Images/Tavern_1.png" alt="Building tools UI" class="screenshotProject2">
+                            <img src="Images/Tavern_2.jpg" alt="Node-based surface painting" class="screenshotProject2">
+                            <img src="Images/Tavern_3.png" alt="Object placement tools" class="screenshotProject2">
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Tavern Builder</h4>
                     <p class="project-description">
-                        Focus on interesting programming aspects: AI, UI systems,
-                        performance work, tooling, or architecture decisions.
+                        Role: Sole Programmer, Quest & Combat Designer <br>
+                        Team Size: 4 <br>
+                        Status: On hold<br>
+                        Engine: Unreal Engine 5.4<br>
+                        Tech: C++, Blueprints
                     </p>
-                    <p class="project-tech">
-                        Technologies used.
+                    <br>
+                    <h5>Overview</h5>
+                    <p class="project-description">
+                        Tavern Builder is a sandbox-style building game focused on player-driven construction and customization. As the sole programmer, I was responsible for implementing all core building tools and systems that allow players and designers to create, modify, and customize environments interactively.
+                    </p>
+                    <br>
+                    <h5>Systems & Responsibilities</h5>
+                    <ul class="project-description-list">
+                        <li>Object creation, deletion, and movement tools</li>
+                        <li>Node-based surface painting and customization system</li>
+                        <li>Dynamic and scalable UI systems</li>
+                        <li>Map objective and progression systems</li>
+                    </ul>
+                    <br>
+                    <h5>Technical Highlights</h5>
+                    <p class="project-description">
+                        <b>Dynamic Object Selection UI:</b><br>
+                        I implemented a UI system that automatically resizes and adapts based on the number of available objects, without requiring manual layout adjustments from designers. Using C++ with NativeConstruct and NativePreConstruct, the UI dynamically builds and scales its content, reducing designer overhead and improving tool robustness.
+                        <br>
+                        <b>Node-Based Surface Customization with Instanced Meshes:</b><br>
+                        I developed a node-based surface system using Instanced Static Mesh Components, allowing designers to create surfaces of arbitrary size while enabling players to customize each node individually. Since instanced meshes cannot have unique materials per instance, I implemented a data-driven material system where instance data defines which texture and texture region is applied per node, enabling per-node visual customization while maintaining performance.
+                    </p>
+                    <br>
+                    <h5>Technical Challenge & Solution</h5>
+                    <h5>Performance and Material Constraints in Large Editable Surfaces</h5>
+                    <p class="project-description">
+                        The initial implementation used individual actors per surface node, which quickly became a major performance bottleneck. Migrating to Instanced Static Meshes solved the performance issue but removed per-node material flexibility.<br>
+                        To restore customization, I redesigned the material workflow to use texture atlases and per-instance data for texture selection. To mitigate atlas limits, I collaborated with the texture artist to create mini texture atlases and planned texture grouping strategies, allowing a large variety of surface appearances while maintaining rendering efficiency and scalability.
                     </p>
                 </article>
 
@@ -127,14 +190,69 @@
     <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
-            <h3>Technical Skills</h3>
+            <h2>Technical Skills</h2>
 
-            <ul class="skills-list">
-                <li>Programming languages and proficiency levels</li>
-                <li>Game engines and related workflows</li>
-                <li>Gameplay systems, AI, UI, networking, or tools</li>
-                <li>Version control, debugging, and optimization practices</li>
-            </ul>
+            <div class="skills-grid">
+
+                <div class="skill-block">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>C++ (primary, Unreal Engine gameplay and systems)</li>
+                    <li>C# (Unity and general scripting)</li>
+                    <li>JavaScript, HTML, CSS (portfolio and web tooling)</li>
+                    <li>Python (scripting and automation)</li>
+                </ul>
+                </div>
+
+                <div class="skill-block">
+                <h3>Engines & Frameworks</h3>
+                <ul>
+                    <li>Unreal Engine 5 (C++ and Blueprints, primary engine)</li>
+                    <li>Unity (C# scripting, shaders)</li>
+                </ul>
+                </div>
+
+                <div class="skill-block">
+                <h3>Gameplay & Systems</h3>
+                <ul>
+                    <li>Turn-based combat systems</li>
+                    <li>Quest and dialog systems with branching logic</li>
+                    <li>UI systems (dynamic layouts, scalable widgets)</li>
+                    <li>Node-based surface and painting systems</li>
+                    <li>Custom Unreal editor tools and property customization</li>
+                </ul>
+                </div>
+
+                <div class="skill-block">
+                <h3>Rendering & Performance</h3>
+                <ul>
+                    <li>Instanced Static Mesh optimization</li>
+                    <li>Material graphs and shader development (Unreal & Unity)</li>
+                    <li>Memory optimization and scalable system design</li>
+                    <li>Basic multithreading concepts</li>
+                </ul>
+                </div>
+
+                <div class="skill-block">
+                <h3>Tools & Pipeline</h3>
+                <ul>
+                    <li>Visual Studio (C++, C#)</li>
+                    <li>Visual Studio Code (Web development)</li>
+                    <li>Git & Git Bash (version control)</li>
+                    <li>Jira (task tracking and team workflow)</li>
+                </ul>
+                </div>
+
+                <div class="skill-block">
+                <h3>Collaboration & Workflow</h3>
+                <ul>
+                    <li>Sole programmer on small teams (4–5 developers)</li>
+                    <li>Close collaboration with designers and artists</li>
+                    <li>Experience designing gameplay systems for designers</li>
+                    <li>PC platform development</li>
+                </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -165,6 +283,15 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Screenshot Modal Viewer -->
+    <div id="image_modal" class="image-modal">
+        <span id="modal-close">&times;</span>
+        <button id="prevImage" class="modal-nav left">&#10094;</button>
+        <img id="modal-img" class="center">
+        <button id="nextImage" class="modal-nav right">&#10095;</button>
+        <p id="modal-caption"></p>
+    </div>
+
+     <script src="Code/index.js"></script>
 </body>
 </html>
