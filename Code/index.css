@@ -322,3 +322,61 @@ a {
   margin-bottom: 0.4rem;
   color: #ccc;
 }
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-intro {
+  max-width: 720px;
+  margin: 1rem auto 2.5rem auto;
+  color: #bbb;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.contact-card {
+  display: block;
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 14px;
+  border: 1px solid #222;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  border-color: #00bcd4;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+
+.contact-card h3 {
+  color: #00bcd4;
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.contact-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.resume-button {
+  background: linear-gradient(135deg, #00bcd4, #007c8c);
+  color: black;
+  border: none;
+}
+
+.resume-button h3,
+.resume-button p {
+  color: black;
+  font-weight: 600;
+}
