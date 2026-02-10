@@ -70,3 +70,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.target === modal) modal.style.display = "none";
   };
 });
+
+function copyEmail() {
+    const email = document.getElementById("email-text").innerText;
+    navigator.clipboard.writeText(email);
+    alert("Email copied to clipboard");
+  }

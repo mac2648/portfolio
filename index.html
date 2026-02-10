@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Programmer Portfolio</title>
     <link rel="stylesheet" href="Code/index.css" />
+    <script src="Code/index.js"></script>
 </head>
 <body>
 
@@ -266,10 +267,13 @@
         </p>
 
         <div class="contact-grid container">
-            <a href="mailto:marcelo1112@live.com" class="contact-card">
-            <h3>Email</h3>
-            <p>marcelo1112@live.com</p>
-            </a>
+            <div class="contact-card email-card">
+                <a href="mailto:marcelo1112@live.com">
+                    <h3>Email</h3>
+                    <p id="email-text">marcelo1112@live.com</p>
+                </a>
+                <button onclick=copyEmail()>Copy Email</button>
+            </div>
 
             <a href="https://github.com/mac2648" class="contact-card" target="_blank">
             <h3>GitHub</h3>
@@ -306,6 +310,6 @@
         <p id="modal-caption"></p>
     </div>
 
-     <script src="Code/index.js"></script>
+     
 </body>
 </html>
