@@ -72,7 +72,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function copyEmail() {
-    const email = document.getElementById("email-text").innerText;
-    navigator.clipboard.writeText(email);
-    alert("Email copied to clipboard");
-  }
+  const email = document.getElementById("email-text").innerText;
+  navigator.clipboard.writeText(email);
+  showToast("Email copied to clipboard");
+}
+
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.innerText = message;
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 2500);
+}
